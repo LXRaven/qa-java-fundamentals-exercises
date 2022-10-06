@@ -1,4 +1,4 @@
-package com.qa.java.NumOfWords;
+package com.qa.java.numOfWords;
 
 public class Main {
 
