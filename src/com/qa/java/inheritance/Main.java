@@ -8,9 +8,19 @@ public class Main {
 		
 		System.out.println("Audi:");
 		a1.displayCarDetails();
+		
 		System.out.println();
+		
 		System.out.println("BMW:");
 		b1.displayCarDetails();
+		
+		System.out.println();
+		
+		CarService.service(a1);
+		
+		System.out.println();
+		
+		CarService.service(b1);
 	}
 
 }
