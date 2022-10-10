@@ -1,13 +1,16 @@
 package com.qa.java.oop;
 
+import java.util.ArrayList;
+
 public class Product {
-	int id;
-	String name;
+	public int id;
+	public String name;
 	float price;
 	String category;
 	float rating;
 	float discountPercentage;
 	boolean isAvailable;
+	static public ArrayList<Product> allProducts = new ArrayList<Product>();
 	
 	public Product(int id, String name, float price, String category, float rating, float discountPercentage,
 			boolean isAvailable) {
@@ -18,9 +21,10 @@ public class Product {
 		this.rating = rating;
 		this.discountPercentage = discountPercentage;
 		this.isAvailable = isAvailable;
+		allProducts.add(this);
 	}
 	
-	public void viewDetails() {
+	public void displayProductDetails() {
 		System.out.println("Id is: " + id);
 		System.out.println("name is: " + name);
 		System.out.println("price is: " + price);
