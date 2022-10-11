@@ -14,7 +14,6 @@ public class Audi implements iCar{
 
 	public Audi(int id, String name, int price, short engineCC, String fuelType, short manufacturingYear, String model,
 			boolean isAvailable) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;

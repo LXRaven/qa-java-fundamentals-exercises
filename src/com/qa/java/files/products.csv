@@ -1,0 +1,4 @@
+id,name,price,category,rating,discountPercentage,Is Available
+1,apple,1.35,Fruit,4.30,2.80,true
+2,eggs,1.80,Pantry,2.50,2.75,false
+3,bananas,1.6,Fruit,3.10,4.90,true
