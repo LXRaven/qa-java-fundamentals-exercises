@@ -1,10 +1,12 @@
 package com.qa.java.io;
 
+import java.util.List;
+
 public class Main {
 	
 	public static void main(String[] args) {
 	
-			Product[] allProducts = ProductRepository.getProductsFromFile("C:\\Users\\Alex TJ\\Desktop\\desktop\\QA Bootcamp 2022\\Java Fundamentals\\java.exercises\\src\\com\\qa\\java\\io\\products.csv");
+			List<Product> allProducts = ProductRepository.getProductsFromFile("C:\\Users\\Alex TJ\\Desktop\\desktop\\QA Bootcamp 2022\\Java Fundamentals\\java.exercises\\src\\com\\qa\\java\\io\\products.csv");
 			
 			//printing all products from a csv file
 			for (Product product : allProducts) {

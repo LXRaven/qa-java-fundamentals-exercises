@@ -1,6 +1,7 @@
 package com.qa.java.io;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
 public class ProductService {
 
@@ -14,7 +15,7 @@ public class ProductService {
 		System.out.println("isAvailable is: " + p.isAvailable());
 	}
 	
-	public static Product getProductById(Product[] products, int id) {
+	public static Product getProductById(List<Product> products, int id) {
 		Product p = new Product();
 		for(Product searchedProduct : products) {
 			if (searchedProduct.getId() == id) {
@@ -24,9 +25,9 @@ public class ProductService {
 		return p;
 	}
 	
-	public static Product getCheapestProduct(Product[] products) {
-		float minPrice = products[0].getPrice();
-		Product p = products[0];
+	public static Product getCheapestProduct(List<Product> products) {
+		float minPrice = products.get(0).getPrice();
+		Product p = products.get(0);
 		for(Product searchedProduct : products) {
 			if (searchedProduct.getPrice() < minPrice) {
 				p = searchedProduct;
@@ -36,9 +37,9 @@ public class ProductService {
 		return p;
 	}
 	
-	public static Product getMostExpensiveProduct(Product[] products) {
-		float maxPrice = products[0].getPrice();
-		Product p = products[0];
+	public static Product getMostExpensiveProduct(List<Product> products) {
+		float maxPrice = products.get(0).getPrice();
+		Product p = products.get(0);
 		for(Product searchedProduct : products) {
 			if (searchedProduct.getPrice() > maxPrice) {
 				p = searchedProduct;
@@ -48,9 +49,9 @@ public class ProductService {
 		return p;
 	}
 	
-	public static Product getLowestRatingProduct(Product[] products) {
-		float minRating = products[0].getRating();
-		Product p = products[0];
+	public static Product getLowestRatingProduct(List<Product> products) {
+		float minRating = products.get(0).getRating();
+		Product p = products.get(0);
 		for(Product searchedProduct : products) {
 			if (searchedProduct.getRating() <= minRating) {
 				p = searchedProduct;
@@ -60,9 +61,9 @@ public class ProductService {
 		return p;
 	}
 	
-	public static Product getHighestRatingProduct(Product[] products) {
-		float maxRating = products[0].getRating();
-		Product p = products[0];
+	public static Product getHighestRatingProduct(List<Product> products) {
+		float maxRating = products.get(0).getRating();
+		Product p = products.get(0);
 		for(Product searchedProduct : products) {
 			if (searchedProduct.getRating() >= maxRating) {
 				p = searchedProduct;
