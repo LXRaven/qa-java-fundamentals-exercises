@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Product {
 	public int id;
 	public String name;
-	float price;
-	String category;
-	float rating;
-	float discountPercentage;
-	boolean isAvailable;
+	public float price;
+	public String category;
+	public float rating;
+	public float discountPercentage;
+	public boolean isAvailable;
 	static public ArrayList<Product> allProducts = new ArrayList<Product>();
 	
 	public Product(int id, String name, float price, String category, float rating, float discountPercentage,
